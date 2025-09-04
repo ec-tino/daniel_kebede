@@ -1,0 +1,91 @@
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.research_card {
+    display: flex;
+    width: 90%;
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2); /* left + bottom shadow */
+    margin: 10px auto;
+}
+
+/* Image takes 1/4 width */
+.card_image {
+    flex: 1;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures it fills nicely */
+  display: block;
+}
+
+/* Content takes 3/4 width */
+.card_content {
+  flex: 3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.card_description {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 5px;
+  text-align: start;
+}
+
+.card_link {
+    color:rgb(24, 24, 23); 
+    text-align: start;
+    margin-left: 5px;
+}
+
+.card_link:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Responsive: Stack image on top for small screens */
+@media (max-width: 768px) {
+  .research_card {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card_image {
+    flex: none;
+    width: 40%;
+  }
+
+  .card_image img {
+    height: auto; /* keeps natural aspect ratio */
+  }
+
+  .card_content {
+    flex: none;
+    width: 100%;
+  }
+
+  .card_description {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

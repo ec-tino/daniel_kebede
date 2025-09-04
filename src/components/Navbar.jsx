@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       {/* Logo */}
-      <div className={styles.nav_logo}>Daniel Kebede</div>
+      <div className={styles.nav_logo}>Daniel G. Kebede</div>
 
       {/* Nav Links */}
       <div
