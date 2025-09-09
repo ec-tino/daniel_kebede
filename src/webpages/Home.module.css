@@ -18,10 +18,10 @@
 
 .profile_image {
     height: 450px;
-    width: 420px;
+    width: 350px;
     display: block;
     margin: 0 auto 15px;
-    border-radius: 50%;
+    border-radius: 1%;
     /* margin: 20px; */
     /* vertical-align: middle; */
 }

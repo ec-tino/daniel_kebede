@@ -49,7 +49,44 @@ const Research = () => {
                     <a href="#" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
                 </div>                
             </div>
-            <div className={Styles.research_card}></div>
+            <div className={Styles.research_card}>
+                <div className={Styles.card_image}>
+                    <img src="/src/assets/react.svg" alt="Card Visual" />
+                </div>
+                <div className={Styles.card_content}>
+                    <h2 className={Styles.card_title}>Microeconomic Sources of Productivity Growth Across Japanese 
+                        Cities ( with Mario J Crucini, Purdue University )</h2>
+                    <p className={Styles.card_description}>
+                        The combination of perfect competition and Cobb-Douglas production equates aggregate labor productivity with the real wage. 
+                        This paper uses micro-data to decompose total labor productivity into the contributions of individual goods and services. 
+                        Prices that rise at more than the average rate produce tail winds in labor productivity growth while those that fall spur advances. 
+                        This concept is applied to approximately 114 retail goods and services sold across 68 cities in Japan over the period from 1961 to 2018.
+                    </p>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
+                </div>                
+            </div>   
+            <div className={Styles.research_card}>
+                <div className={Styles.card_image}>
+                    <img src="/src/assets/react.svg" alt="Card Visual" />
+                </div>
+                <div className={Styles.card_content}>
+                    <h2 className={Styles.card_title}>Do Incentives Matter? Evidence from COVID 19 Vaccine Rollout 
+                        ( with James Reeder, Purdue University )</h2>
+                    <p className={Styles.card_description}>
+                        Governmental agencies and non-governmental organizations have often relied on marketing techniques to drive compliance of their constituency. 
+                        For example, the US government has recently pledged to spend $50 million in advertising to promote the HealthCare.gov website. 
+                        Our study explores a different marketing tool that governments recently adopted during the COVID-19 pandemic, promotions. 
+                        While promotions, both price and non-price promotions, have long been used by businesses to drive sales, this is a relatively new lever used 
+                        in public policy at such a scale. During the COVID-19 pandemic, local governmental agencies were forced to grapple with how to increase 
+                        vaccination rates among the population. Our study is the first to examine if the use of promotions actually increased the rates of vaccinations within 
+                        the United States. Using a novel set of data, recasting the bass diffusion framework, and leveraging new techniques to assess treatment effects in panel 
+                        data we estimate not only the direct effect of promotions on vaccination, but if regional heterogeneity plays a role in its efficacy. Our preliminary 
+                        findings suggest that the use of promotions does increase the rate at which people get vaccinated. However, this effect is moderated by the size of the 
+                        population that is vaccine hesitant and political affiliation.
+                    </p>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
+                </div>                
+            </div>                         
         </div>
     );
 };
