@@ -3,12 +3,14 @@ import Styles from './Research.module.css'
 
 const Research = () => {
     return (
+        <>
+            <div>
+                <div className={Styles.spacer}> <h1>Research</h1></div>
+            </div> 
         <div className={Styles.container}>
-            <h1>Research</h1>
-            <hr /> 
             <div className={Styles.research_card}>
                 <div className={Styles.card_image}>
-                    <img src="/src/assets/react.svg" alt="Card Visual" />
+                    <img src="/src/assets/research1.png" alt="Card Visual" />
                 </div>
                 <div className={Styles.card_content}>
                     <h2 className={Styles.card_title}>Modeling Earning Process and Analyzing 
@@ -32,7 +34,7 @@ const Research = () => {
             
             <div className={Styles.research_card}>
                 <div className={Styles.card_image}>
-                    <img src="/src/assets/react.svg" alt="Card Visual" />
+                    <img src="/src/assets/research2.png" alt="Card Visual" />
                 </div>
                 <div className={Styles.card_content}>
                     <h2 className={Styles.card_title}>Testing Smooth Structural Breaks in Predictive Regression</h2>
@@ -51,7 +53,7 @@ const Research = () => {
             </div>
             <div className={Styles.research_card}>
                 <div className={Styles.card_image}>
-                    <img src="/src/assets/react.svg" alt="Card Visual" />
+                    <img src="/src/assets/research3.png" alt="Card Visual" />
                 </div>
                 <div className={Styles.card_content}>
                     <h2 className={Styles.card_title}>Microeconomic Sources of Productivity Growth Across Japanese 
@@ -67,7 +69,7 @@ const Research = () => {
             </div>   
             <div className={Styles.research_card}>
                 <div className={Styles.card_image}>
-                    <img src="/src/assets/react.svg" alt="Card Visual" />
+                    <img src="/src/assets/research4.png" alt="Card Visual" />
                 </div>
                 <div className={Styles.card_content}>
                     <h2 className={Styles.card_title}>Do Incentives Matter? Evidence from COVID 19 Vaccine Rollout 
@@ -88,6 +90,7 @@ const Research = () => {
                 </div>                
             </div>                         
         </div>
+        </>
     );
 };
 

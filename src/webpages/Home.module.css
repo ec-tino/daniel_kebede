@@ -1,4 +1,5 @@
 /* CONTAINER FOR MAIN BODY CSS */
+
 .container_body {
     display: flex;
     justify-content: center;
@@ -8,7 +9,8 @@
     margin: 60px auto;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.05); */
+    color: black;
 }
 
 /* .profile_image_container {
@@ -84,13 +86,13 @@
     font-family: 'Poppins', sans-serif; /* clean, professional font */
     font-size: 0.8rem;
     font-weight: 600;
-    color: #d2cfcf; /* dark text for professionalism */
+    color: #1c1b1b; /* dark text for professionalism */
     margin-bottom: 5px; 
   }
 
   .container_about h1 {
     text-align: center;
-    color: blueviolet;
+    color: rgb(23, 21, 25);
     font-style: italic;
   }
 

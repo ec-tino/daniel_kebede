@@ -40,19 +40,19 @@ const Navbar = () => {
         <Link to="/" onClick={() => setMenuOpen(false)}>
           Home
         </Link>
-        <hr />
+        {/* <hr /> */}
         <Link to="/research" onClick={() => setMenuOpen(false)}>
           Research
         </Link>
-        <hr />
+        {/* <hr /> */}
         <Link to="/teaching" onClick={() => setMenuOpen(false)}>
           Teaching
         </Link>
-        <hr />
+        {/* <hr /> */}
         <Link to="/cv" onClick={() => setMenuOpen(false)}>
           CV
         </Link>
-        <hr />
+        {/* <hr /> */}
         <Link to="/blog" onClick={() => setMenuOpen(false)}>
           Blog
         </Link>

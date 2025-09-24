@@ -1,12 +1,13 @@
 /* Navbar Styles */
 .navbar {
-  background-color: rgb(152, 5, 152);
-  color: white;
+  background-color: white;
+  color: rgb(34, 33, 33);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
   width: 100%;
+  height: 80px;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -21,7 +22,7 @@
 
 .nav_links {
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .nav-links a {
@@ -29,7 +30,7 @@
   text-decoration: none;
   position: relative;
   padding: 5px 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: 0.3s;
 }
 
@@ -44,9 +45,10 @@
   transition: width 0.3s ease-in-out;
 }
 
-.nav_links a:hover::after {
-  width: 100%;
+.nav_links a:hover {
+  color: #888888;
 }
+
 
 /* Toggle Button for Mobile */
 .toggle_btn {
@@ -72,7 +74,7 @@
     right: -250px; /* start offscreen */
     height: 100%;
     width: 150px;
-    background-color: rgb(152, 5, 152);
+    background-color: white;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
@@ -81,6 +83,10 @@
     transition: right 0.3s ease-in-out;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 0 2%;
+  }
+
+  .nav_links a:hover {
+    color: #888888;
   }
 
   .nav_links.show {
@@ -99,5 +105,6 @@
 
   .close_btn {
     display: block;
+    color: black;
   }
 }

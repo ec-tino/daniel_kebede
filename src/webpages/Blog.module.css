@@ -1,0 +1,63 @@
+.spacer {
+  background-color: rgb(58, 48, 80);
+  height: 80px;             /* increase height so it has room to breathe */
+  display: flex;             /* use flexbox */
+  align-items: center;       /* vertical centering */
+  justify-content: center;   /* horizontal centering */
+  color: white;
+  margin-bottom: 20px;
+}
+
+.custom_heading {
+  font-size: 48px;   /* make text bigger */
+  font-weight: 700;  /* bold */
+  text-align: center;
+}
+
+/* .carousel_container {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.carousel_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.carousel_container {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.carousel_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;   /* set your desired max width */
+  margin: 0 auto;      /* keep it centered within the container */
+  width: 100%;         /* let it shrink nicely on smaller screens */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    } 
+
+    .carousel_item{
+        width: 700px !important;
+        max-width: 90vw;
+    }
+    .custom_heading {
+        font-size: 40px;   /* make text bigger */
+        font-weight: 600;  /* bold */
+        text-align: center;
+    }
+}

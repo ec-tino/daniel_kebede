@@ -3,14 +3,26 @@ import Styles from './CV.module.css'
 
 const CV = () => {
     return (
-        <div className={Styles.container}>
-            <h1>CV</h1>
-            <hr />
-            <p> Download a copy of my <a href="/src/assets/Daniel_CV.pdf" target="_blank">curriculum vitae</a></p>
-            <div className={Styles.cv_container}>
-                <embed src="/src/assets/Daniel_CV.pdf" title="Daniel's CV"></embed>
+        <>
+            <div>
+                <div className={Styles.spacer}> <h1>Curriculum Vitae</h1></div>
+            </div> 
+            <div className={Styles.container}>
+                <p>
+                    Download a copy of my{' '}
+                    <a
+                        href="/src/assets/Daniel_CV.pdf"
+                        target="_blank"
+                        className={Styles.cvLink}
+                    >
+                        CV
+                    </a>
+                </p>
+                <div className={Styles.cv_container}>
+                    <embed src="/src/assets/Daniel_CV.pdf" title="Daniel's CV"></embed>
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 

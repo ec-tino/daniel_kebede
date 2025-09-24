@@ -6,6 +6,7 @@ import Research from './webpages/Research'
 import Teaching from './webpages/Teaching'
 import CV from './webpages/CV'
 import Blog from './webpages/Blog'
+import Footer_new from './components/Footer_new'
 import './App.css'
 //import { useState } from 'react'
 
@@ -23,7 +24,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
         </Routes>
       </main>
-      <Footer />
+      <Footer_new />
     </>
   )
 }

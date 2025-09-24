@@ -1,135 +1,136 @@
+/* --- Carousel Styles --- */
 .carousel-container {
   position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 1; /* Maintain a 2:1 aspect ratio */
+  margin: auto;
   overflow: hidden;
-  border: 1px solid #555;
-  border-radius: 24px;
-  padding: 16px;
-  --outer-r: 24px;
-  --p-distance: 12px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
-.carousel-track {
-  display: flex;
-}
-
-.carousel-item {
-  position: relative;
-  display: flex;
-  flex-shrink: 0;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  border: 1px solid #555;
-  border-radius: calc(var(--outer-r) - var(--p-distance));
-  background-color: #0d0716;
-  overflow: hidden;
-  cursor: grab;
-}
-
-.carousel-item:active {
-  cursor: grabbing;
-}
-
-.carousel-container.round {
-  border: 1px solid #555;
-}
-
-.carousel-item.round {
-  background-color: #0d0716;
-  position: relative;
-  bottom: 0.1em;
-  border: 1px solid #555;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.carousel-item-header.round {
-  padding: 0;
-  margin: 0;
-}
-
-.carousel-indicators-container.round {
+.carousel-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
   position: absolute;
-  z-index: 2;
-  bottom: 3em;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the slide without distortion */
+}
+
+.slide-text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  color: white;
+  padding: 4rem 2rem 2rem;
+}
+
+.slide-text-overlay h2 {
+  font-size: 2.25rem;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.slide-text-overlay p {
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+}
+
+.slide-text-overlay a {
+  color: #89cff0; /* A pleasant light blue */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.slide-text-overlay a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  z-index: 10;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-arrow {
+  left: 15px;
+}
+
+.right-arrow {
+  right: 15px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.carousel-indicator.active {
-  background-color: #333333;
-}
-
-.carousel-indicator.inactive {
-  background-color: rgba(51, 51, 51, 0.4);
-}
-
-.carousel-item-header {
-  margin-bottom: 16px;
-  padding: 20px;
-  padding-top: 20px;
-}
-
-.carousel-icon-container {
   display: flex;
-  height: 28px;
-  width: 28px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: #fff;
+  gap: 10px;
+  z-index: 10;
 }
 
-.carousel-icon {
-  height: 16px;
-  width: 16px;
-  color: #060010;
-}
-
-.carousel-item-content {
-  padding: 20px;
-  padding-bottom: 20px;
-}
-
-.carousel-item-title {
-  margin-bottom: 4px;
-  font-weight: 900;
-  font-size: 18px;
-  color: #fff;
-}
-
-.carousel-item-description {
-  font-size: 14px;
-  color: #fff;
-}
-
-.carousel-indicators-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.carousel-indicators {
-  margin-top: 16px;
-  display: flex;
-  width: 150px;
-  justify-content: space-between;
-  padding: 0 32px;
-}
-
-.carousel-indicator {
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
+.dot {
   cursor: pointer;
-  transition: background-color 150ms;
+  height: 12px;
+  width: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
 }
 
-.carousel-indicator.active {
-  background-color: #fff;
+.dot.active,
+.dot:hover {
+  background-color: #ffffff;
 }
 
-.carousel-indicator.inactive {
-  background-color: #555;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-container {
+    aspect-ratio: 5 / 4; /* Taller aspect ratio on small screens */
+  }
+
+  .slide-text-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .slide-text-overlay p {
+    font-size: 1rem;
+  }
 }

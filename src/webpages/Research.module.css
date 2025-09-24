@@ -1,17 +1,26 @@
+.spacer {
+  background-color: rgb(58, 48, 80);
+  height: 80px;
+  padding: 10px;
+  justify-content: center;
+  color: white;
+}
+
 .container {
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .research_card {
-    display: flex;
-    width: 90%;
-    max-width: 100%;
-    background: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2); /* left + bottom shadow */
-    margin: 10px auto;
+  display: flex;
+  width: 90%;
+  max-width: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  /* box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2); left + bottom shadow */
+  margin: 24px auto; /* Increased vertical margin for more gap between cards */
+  border: 1px solid #e2e1e1;
 }
 
 /* Image takes 1/4 width */
@@ -40,6 +49,7 @@
   font-weight: bold;
   text-decoration: underline;
   margin-bottom: 5px;
+  text-align: left;
   color: #222;
 }
 
@@ -64,6 +74,11 @@
 
 /* 🔹 Responsive: Stack image on top for small screens */
 @media (max-width: 768px) {
+  .container {
+    margin-left: 5px;
+    margin-right: 5px;
+  } 
+
   .research_card {
     flex-direction: column;
     align-items: center;
@@ -72,16 +87,21 @@
 
   .card_image {
     flex: none;
-    width: 40%;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 8px; /* Reduce gap between image and title */
   }
 
   .card_image img {
-    height: auto; /* keeps natural aspect ratio */
+    height: 200px; /* keeps natural aspect ratio */
+    width: 100%;
+    
   }
 
   .card_content {
     flex: none;
     width: 100%;
+    padding: 5px;
   }
 
   .card_description {
