@@ -48,7 +48,7 @@ const Research = () => {
                         compared to SupF and LM, the test statistic rejects the null hypothesis of no structural 
                         break more frequently when there actually is a structural break present in the data.
                     </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
+                    <a href="/src/assets/Smooth_Structural_Break_Test.pdf" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
                 </div>                
             </div>
             <div className={Styles.research_card}>
@@ -64,7 +64,7 @@ const Research = () => {
                         Prices that rise at more than the average rate produce tail winds in labor productivity growth while those that fall spur advances. 
                         This concept is applied to approximately 114 retail goods and services sold across 68 cities in Japan over the period from 1961 to 2018.
                     </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
+                    {/* <a href="#" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a> */}
                 </div>                
             </div>   
             <div className={Styles.research_card}>
@@ -86,7 +86,7 @@ const Research = () => {
                         findings suggest that the use of promotions does increase the rate at which people get vaccinated. However, this effect is moderated by the size of the 
                         population that is vaccine hesitant and political affiliation.
                     </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
+                    <a href="/src/assets/Leveraging_Promotion_for_Social_Good.pdf" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
                 </div>                
             </div>                         
         </div>

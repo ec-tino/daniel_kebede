@@ -26,6 +26,18 @@ const Footer_new = () => {
             flex: 1;
             min-width: 220px;
         }
+        
+        .email_link {
+            color: #ced4da;
+            text-decoration: none; /* Remove default underline */
+            transition: text-decoration 0.3s ease; /* Optional: smooth transition */
+        }
+
+        .email_link:hover {
+            text-decoration: underline; /* Add underline on hover */
+            color: #ced4da;
+            font-style: bold;
+        }
 
         .footer_item h3 {
             font-size: 1.2rem;
@@ -92,19 +104,21 @@ const Footer_new = () => {
                     <div className="footer_item">
                         <h3>Contact</h3>
                         <div className="contact_info">
-                            <p>Mobile phone: +1 (123)456 7890</p>
-                            <p>Email: myemail@gmail.com</p>
+                            <p><b>Mobile phone:</b> +1 (765)357 1616</p>
+                            <p><b>Email:</b> <a href="mailto:dkebede@colgate.edu" className='email_link'>dkebede@colgate.edu</a></p>
                         </div>
                     </div>
                     <div className="footer_item">
                         <h3>Address</h3>
-                        <p className="address">13 Oak Dr, Hamilton NY, 13346</p>
+                        <p className="address">Department of Economics</p>
+                        <p className="address">Colgate University</p>
+                        <p className="address"> 13 Oak Drive, Hamilton NY, 13346</p>
                     </div> 
                     <div className="footer_item">
                         <h3>Follow Me</h3>
                         <div className="container_socials">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a> 
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/dangulti" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a> 
+                            <a href="https://www.linkedin.com/in/kebede77/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>

@@ -13,7 +13,7 @@ const Home = () => {
                     <h3 className={styles.profile_name}> Daniel Gulti Kebede, Ph.D</h3>
                 </div>
                 <div className={styles.container_about}>
-                    <h1>A bit about me...</h1>
+                    <h1>About me</h1>
                     <p>
                         Welcome! I am a visiting assistant professor at Colgate University department of Economics. 
                         I am broadly interested in applying frontier econometric models to interesting economic 
