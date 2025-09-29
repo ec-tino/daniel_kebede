@@ -55,7 +55,7 @@ const Carousel = ({ slides }) => {
                 <div className="slide-text-overlay">
                     <h2>{slide.title}</h2>
                     <p>{slide.description}</p>
-                    <a href={`#${slide.articleId}`}>Read More &rarr;</a>
+                    {/* <a href={`#${slide.articleId}`}>Read More &rarr;</a> */}
                 </div>
             </div>
         ))}

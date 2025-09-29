@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import SplitText from "/Users/tino/Desktop/project test files/daniel_portfolio/daniel_project/src/components/SplitText.jsx";
-import Carousel from "/Users/tino/Desktop/project test files/daniel_portfolio/daniel_project/src/components/Carousel.jsx"
-import BlogPostCard from "/Users/tino/Desktop/project test files/daniel_portfolio/daniel_project/src/components/BlogPostCard.jsx";
+import SplitText from "../components/SplitText.jsx";
+import Carousel from "../components/Carousel.jsx"
+import BlogPostCard from "../components/BlogPostCard.jsx";
 import styles from "./Blog.module.css"
+import fullTexts from "../components/BlogFullText.js"
 
 
 const Blog = () => {
@@ -39,7 +40,11 @@ const Blog = () => {
             excerpt: "Exploring how quantum computing will transform computer science curricula in the next decade.",
             date: "May 15, 2023",
             category: "Research",
-            imageUrl: "http://static.photos/technology/640x360/101"
+            imageUrl: "http://static.photos/technology/640x360/101",
+            fullText: fullTexts.quantumComputing.paragraphs[1] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[2] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[3] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[4]
         },
         {
             id: 2,
@@ -47,7 +52,11 @@ const Blog = () => {
             excerpt: "Implementing active learning techniques to improve student outcomes in algorithm courses.",
             date: "April 28, 2023",
             category: "Teaching",
-            imageUrl: "http://static.photos/education/640x360/102"
+            imageUrl: "http://static.photos/education/640x360/102",
+            fullText: fullTexts.quantumComputing.paragraphs[1] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[2] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[3] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[4]
         },
         {
             id: 3,
@@ -55,7 +64,11 @@ const Blog = () => {
             excerpt: "Addressing the moral responsibilities of computer scientists in the age of artificial intelligence.",
             date: "March 10, 2023",
             category: "Publications",
-            imageUrl: "http://static.photos/science/640x360/103"
+            imageUrl: "http://static.photos/science/640x360/103",
+            fullText: fullTexts.quantumComputing.paragraphs[1] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[2] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[3] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[4]
         },
         {
             id: 4,
@@ -63,7 +76,11 @@ const Blog = () => {
             excerpt: "Examining real-world use cases for blockchain technology in various industries.",
             date: "February 22, 2023",
             category: "Research",
-            imageUrl: "http://static.photos/finance/640x360/104"
+            imageUrl: "http://static.photos/finance/640x360/104",
+            fullText: fullTexts.quantumComputing.paragraphs[1] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[2] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[3] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[4]
         },
         {
             id: 5,
@@ -71,7 +88,11 @@ const Blog = () => {
             excerpt: "Strategies for maintaining student motivation and participation in virtual classrooms.",
             date: "January 18, 2023",
             category: "Teaching",
-            imageUrl: "http://static.photos/education/640x360/105"
+            imageUrl: "http://static.photos/education/640x360/105",
+            fullText: fullTexts.quantumComputing.paragraphs[1] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[2] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[3] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[4]
         },
         {
             id: 6,
@@ -79,7 +100,11 @@ const Blog = () => {
             excerpt: "Predicting the most significant cybersecurity threats and defense strategies for the coming year.",
             date: "December 5, 2022",
             category: "Publications",
-            imageUrl: "http://static.photos/technology/640x360/106"
+            imageUrl: "http://static.photos/technology/640x360/106",
+            fullText: fullTexts.quantumComputing.paragraphs[1] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[2] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[3] + "\n\n" + 
+                      fullTexts.quantumComputing.paragraphs[4]
         }
     ]);    
 
@@ -121,6 +146,7 @@ const Blog = () => {
                         date={post.date}
                         category={post.category}
                         imageUrl={post.imageUrl}
+                        fullText={post.fullText}
                     />
                 ))}
             </div>
