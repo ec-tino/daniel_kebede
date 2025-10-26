@@ -28,7 +28,7 @@ const Research = () => {
                     transitory income shocks, respectively. Moreover, I find income and consumption volatilities 
                     and partial consumption insurance parameters vary across time.
                     </p>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
+                    {/* <a href="#" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a> */}
                 </div>
             </div>
             
@@ -73,7 +73,7 @@ const Research = () => {
                 </div>
                 <div className={Styles.card_content}>
                     <h2 className={Styles.card_title}>Do Incentives Matter? Evidence from COVID 19 Vaccine Rollout 
-                        ( with James Reeder, Purdue University )</h2>
+                        ( with James C. Reeder, University of Kansas )</h2>
                     <p className={Styles.card_description}>
                         Governmental agencies and non-governmental organizations have often relied on marketing techniques to drive compliance of their constituency. 
                         For example, the US government has recently pledged to spend $50 million in advertising to promote the HealthCare.gov website. 
@@ -86,7 +86,7 @@ const Research = () => {
                         findings suggest that the use of promotions does increase the rate at which people get vaccinated. However, this effect is moderated by the size of the 
                         population that is vaccine hesitant and political affiliation.
                     </p>
-                    <a href="/src/assets/Leveraging_Promotion_for_Social_Good.pdf" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
+                    <a href="/src/assets/public_policy_diffusion.pdf" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> View article</p></a>
                 </div>                
             </div>                         
         </div>

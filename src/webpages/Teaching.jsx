@@ -4,6 +4,16 @@ import React from 'react';
 const Teaching = () => {
   // Data for the teaching page is now self-contained within the component
   const teachingData = {
+      colgate: {
+        university: 'Colgate University',
+        location: 'Hamilton, NY',
+        experiences: [
+           { description: 'Instructor for ECON 375, Applied Econometrics', term: 'Spring 2025' },
+           { description: 'Instructor for ECON 252, Intermediate Microeconomics', term: 'Spring 2024 & 2025' },
+           { description: 'Instructor for ECON 375, Applied Econometrics', term: 'Fall 2024' },
+           { description: 'Instructor for ECON 252, Intermediate Microeconomics', term: 'Fall 2023 & 2024' }
+        ]
+      },
       purdue: {
         university: 'Purdue University',
         location: 'West Lafayette, IN',
