@@ -13,7 +13,7 @@ const Blog = () => {
 
     const slides = [
     {
-      image: '/src/assets/no_blog.png',
+      image: '/no_blog.png',
       title: 'No Blog Posts Yet',
       description: 'Come back later to see new articles on various topics...',
       articleId: 'no-article',
@@ -36,7 +36,8 @@ const Blog = () => {
     //                   fullTexts.quantumComputing.paragraphs[3] + "\n\n" + 
     //                   fullTexts.quantumComputing.paragraphs[4]
     //     },    
-    // ]);    
+    // ]); 
+    // image: '/src/assets/no_blog.png'   
 
     return (
         <div> 

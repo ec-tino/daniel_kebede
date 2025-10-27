@@ -11,7 +11,7 @@ const CV = () => {
                 <p>
                     Download a copy of my{' '}
                     <a
-                        href="/src/assets/Daniel_CV.pdf"
+                        href="/Daniel_CV.pdf"
                         target="_blank"
                         className={Styles.cvLink}
                     >
@@ -19,11 +19,11 @@ const CV = () => {
                     </a>
                 </p>
                 <div className={Styles.cv_container}>
-                    <embed src="/src/assets/Daniel_CV.pdf" title="Daniel's CV"></embed>
+                    <embed src="/Daniel_CV.pdf" title="Daniel's CV"></embed>
                 </div>
             </div>
         </>
     );
 };
-
+// href="/src/assets/Daniel_CV.pdf"
 export default CV;

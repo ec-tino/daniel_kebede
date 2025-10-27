@@ -9,7 +9,7 @@ const Home = () => {
             </div> */}
             <div className={styles.container_body}>
                 <div className={styles.profile_image_container}>
-                    <img src="/src/assets/Daniel_photo.jpg" alt="Daniel" className={styles.profile_image} />
+                    <img src="/Daniel_photo.jpg" alt="Daniel" className={styles.profile_image} />
                     <h3 className={styles.profile_name}> Daniel Gulti Kebede, Ph.D</h3>
                 </div>
                 <div className={styles.container_about}>
@@ -40,4 +40,5 @@ const Home = () => {
     );
 };
 
+// src="/src/assets/Daniel_photo.jpg"
 export default Home;
