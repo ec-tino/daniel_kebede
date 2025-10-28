@@ -11,15 +11,16 @@ const CV = () => {
                 <p>
                     Download a copy of my{' '}
                     <a
-                        href="/Daniel_CV.pdf"
-                        target="_blank"
-                        className={Styles.cvLink}
+                    href={`${import.meta.env.BASE_URL}Daniel_CV.pdf`}
+                    target="_blank"
+                    className={Styles.cvLink}
                     >
-                        CV
+                    CV
                     </a>
                 </p>
                 <div className={Styles.cv_container}>
-                    <embed src="/Daniel_CV.pdf" title="Daniel's CV"></embed>
+                    {/* <embed src="/Daniel_CV.pdf" title="Daniel's CV"></embed> */}
+                    <embed src={`${import.meta.env.BASE_URL}Daniel_CV.pdf`} title="Daniel's CV" />
                 </div>
             </div>
         </>

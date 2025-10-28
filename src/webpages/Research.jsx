@@ -10,7 +10,7 @@ const Research = () => {
         <div className={Styles.container}>
             <div className={Styles.research_card}>
                 <div className={Styles.card_image}>
-                    <img src="/research1.png" alt="Card Visual" />
+                    <img src={`${import.meta.env.BASE_URL}research1.png`} alt="Card Visual" />
                 </div>
                 <div className={Styles.card_content}>
                     <h2 className={Styles.card_title}>Modeling Earning Process and Analyzing 
@@ -34,7 +34,7 @@ const Research = () => {
             
             <div className={Styles.research_card}>
                 <div className={Styles.card_image}>
-                    <img src="/research2.png" alt="Card Visual" />
+                    <img src={`${import.meta.env.BASE_URL}research2.png`} alt="Card Visual" />
                 </div>
                 <div className={Styles.card_content}>
                     <h2 className={Styles.card_title}>Testing Smooth Structural Breaks in Predictive Regression</h2>
@@ -48,12 +48,12 @@ const Research = () => {
                         compared to SupF and LM, the test statistic rejects the null hypothesis of no structural 
                         break more frequently when there actually is a structural break present in the data.
                     </p>
-                    <a href="/Smooth_Structural_Break_Test.pdf" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
+                    <a href={`${import.meta.env.BASE_URL}Smooth_Structural_Break_Test.pdf`} target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> Access Presentation Files</p></a>
                 </div>                
             </div>
             <div className={Styles.research_card}>
                 <div className={Styles.card_image}>
-                    <img src="/research3.png" alt="Card Visual" />
+                    <img src={`${import.meta.env.BASE_URL}research3.png`} alt="Card Visual" />
                 </div>
                 <div className={Styles.card_content}>
                     <h2 className={Styles.card_title}>Microeconomic Sources of Productivity Growth Across Japanese 
@@ -69,7 +69,7 @@ const Research = () => {
             </div>   
             <div className={Styles.research_card}>
                 <div className={Styles.card_image}>
-                    <img src="/research4.png" alt="Card Visual" />
+                    <img src={`${import.meta.env.BASE_URL}research4.png`} alt="Card Visual" />
                 </div>
                 <div className={Styles.card_content}>
                     <h2 className={Styles.card_title}>Do Incentives Matter? Evidence from COVID 19 Vaccine Rollout 
@@ -86,7 +86,7 @@ const Research = () => {
                         findings suggest that the use of promotions does increase the rate at which people get vaccinated. However, this effect is moderated by the size of the 
                         population that is vaccine hesitant and political affiliation.
                     </p>
-                    <a href="/public_policy_diffusion.pdf" target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> View article</p></a>
+                    <a href={`${import.meta.env.BASE_URL}public_policy_diffusion.pdf`} target="_blank" rel="noopener noreferrer"><p className={Styles.card_link}> View article</p></a>
                 </div>                
             </div>                         
         </div>

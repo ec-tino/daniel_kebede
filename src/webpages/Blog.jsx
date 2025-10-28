@@ -13,7 +13,7 @@ const Blog = () => {
 
     const slides = [
     {
-      image: '/no_blog.png',
+      image: `${import.meta.env.BASE_URL}no_blog.png`,
       title: 'No Blog Posts Yet',
       description: 'Come back later to see new articles on various topics...',
       articleId: 'no-article',
