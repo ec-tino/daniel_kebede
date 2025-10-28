@@ -11,7 +11,7 @@ const CV = () => {
                 <p>
                     Download a copy of my{' '}
                     <a
-                    href={`${import.meta.env.BASE_URL}Daniel_CV.pdf`}
+                    href={`${import.meta.env.BASE_URL}DanielCV.pdf`}
                     target="_blank"
                     className={Styles.cvLink}
                     >
@@ -20,7 +20,7 @@ const CV = () => {
                 </p>
                 <div className={Styles.cv_container}>
                     {/* <embed src="/Daniel_CV.pdf" title="Daniel's CV"></embed> */}
-                    <embed src={`${import.meta.env.BASE_URL}Daniel_CV.pdf`} title="Daniel's CV" />
+                    <embed src={`${import.meta.env.BASE_URL}DanielCV.pdf`} title="Daniel's CV" />
                 </div>
             </div>
         </>
