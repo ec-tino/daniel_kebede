@@ -32,7 +32,7 @@ const Home = () => {
                         and cutting-edge machine learning techniques as needed.
                     </p>
                     <p><b>
-                        Fields: Macroeconomics, Econometrics and Machine Learning.
+                        Fields: Macroeconomics, Applied Econometrics and Finance.
                     </b></p>
                 </div>           
             </div>

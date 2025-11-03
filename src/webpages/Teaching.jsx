@@ -8,10 +8,10 @@ const Teaching = () => {
         university: 'Colgate University',
         location: 'Hamilton, NY',
         experiences: [
-           { description: 'Instructor for ECON 375, Applied Econometrics', term: 'Spring 2025' },
-           { description: 'Instructor for ECON 252, Intermediate Microeconomics', term: 'Spring 2024 & 2025' },
-           { description: 'Instructor for ECON 375, Applied Econometrics', term: 'Fall 2024' },
-           { description: 'Instructor for ECON 252, Intermediate Microeconomics', term: 'Fall 2023 & 2024' }
+           { description: 'Instructor for ECON 375, Applied Econometrics', term: 'Fall 2024 & 2025; Spring 2025' },
+           { description: 'Instructor for ECON 252, Intermediate Macroeconomics', term: 'Fall 2023 & 2024; Spring 2024 & 2025' },
+           { description: 'Instructor for ECON 352A, Money and Banking', term: 'Fall 2025' },
+           { description: 'Instructor for ECON 337, Economic Forecasting', term: 'Spring 2026' }
         ]
       },
       purdue: {
